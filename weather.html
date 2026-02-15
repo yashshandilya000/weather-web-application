@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Real-time Weather Information</title>
+    <link rel="stylesheet" href="/weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="cloud"></div>
+        <div class="cloud cloud-2"></div>
+    </div>
+
+    <div class="container">
+        <div id="right">
+            <div class="main">
+                <div class="weather-icon-wrapper">
+                    <div class="icon">
+                        <i class="fas fa-cloud-sun fa-4x"></i>
+                    </div>
+                </div>
+                <div class="temp">
+                    <span class="temp-value">35</span>
+                    <span class="temp-unit">°C</span>
+                </div>
+                <div class="city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Delhi</span>
+                </div>
+                <div class="condition">
+                    <i class="fas fa-cloud"></i>
+                    <span>Cloudy</span>
+                </div>
+                <div class="datetime-info">
+                    <div class="dates">
+                        <i class="far fa-calendar"></i>
+                        <span>12-1-2025</span>
+                    </div>
+                    <div class="time">
+                        <i class="far fa-clock"></i>
+                        <span>12:00</span>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <div class="detail-info">
+                            <span class="detail-label">Humidity</span>
+                            <span class="detail-value">65%</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <div class="detail-info">
+                            <span class="detail-label">Wind</span>
+                            <span class="detail-value">12 km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <div class="search-header">
+                <h2>Find Weather</h2>
+                <p>Search for your city to get real-time weather updates</p>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="input" placeholder="Enter city name..." list="cities">
+                <datalist id="cities">
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Jaipur">Jaipur</option>
+                </datalist>
+            </div>
+            <button id="submit">
+                <i class="fas fa-search"></i>
+                <span>Search Weather</span>
+            </button>
+            <div class="quick-cities">
+                <p class="quick-label">Quick Access:</p>
+                <div class="city-chips">
+                    <button class="city-chip">Delhi</button>
+                    <button class="city-chip">Mumbai</button>
+                    <button class="city-chip">Bangalore</button>
+                    <button class="city-chip">Chennai</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
